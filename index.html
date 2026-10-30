@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <form class="form">
+            <header class="form_header">
+                <h1>Bug Report</h1>
+                <p>Help us improve by reporting bugs you encounter.</p>
+            </header>
+
+            <div class="form_body">
+                <div for="bugtitle">
+                    <label for="bugtitle">
+                        Bug Title
+                    </label>
+                    <input type="text" id="bugtitle" name="bugtitle" required>
+                </div>
+                <div for="bugdescription">
+                    <label for="bugdescription">
+                        Description
+                    </label>
+                    <textarea type="text" id="bugdescription" name="bugdescription" aria-describedby="hint">
+                    </textarea
+                    id="hint">
+                    <p>Include steps to reproduce expected behavior and what actually happened.</p>
+                </div>
+            </div>
+
+            <footer class="form_footer">
+                <button type="reset">
+                    Reset
+                </button>
+                <button type="submit">
+                    Submit
+                </button>
+            </footer>
+        </form>
+
+        <form class="form">
+            <header class="form_header">
+                <h1>Bug Report</h1>
+                <p>Help us improve by reporting bugs you encounter.</p>
+            </header>
+
+            <div class="form_body">
+                <div for="bugtitle">
+                    <label for="bugtitle">
+                        Bug Title
+                    </label>
+                    <input type="text" id="bugtitle" name="bugtitle" required>
+                </div>
+                <div for="bugdescription">
+                    <label for="bugdescription">
+                        Description
+                    </label>
+                    <textarea type="text" id="bugdescription" name="bugdescription" aria-describedby="hint">
+                    </textarea
+                    id="hint">
+                    <p>Include steps to reproduce expected behavior and what actually happened.</p>
+                </div>
+            </div>
+
+            <footer class="form_footer">
+                <button type="reset">
+                    Reset
+                </button>
+                <button type="submit">
+                    Submit
+                </button>
+            </footer>
+            
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+/* --- Reset --- */
+@import url(styles/globals/reset.css);
+
+/* --- Globals --- */
+@import url(styles/globals/globals.css);
+@import url(styles/globals/typography.css);
+
+/* --- Layout --- */
+@import url(styles/layouts/grids.css);
+
+/* --- Components --- */
+@import url(styles/components/forms.css);
