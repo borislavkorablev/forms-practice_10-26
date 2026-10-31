@@ -1,4 +1,5 @@
 body {
+    background-color: var(--bg-page-primary);
     min-height: 100vh;
     font-family: 'Poppins', 'Verdana', sans-serif;
     line-height: 1.5;

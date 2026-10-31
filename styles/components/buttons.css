@@ -1,0 +1,16 @@
+.button {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-button-default);
+    border-radius: 0.25rem;
+
+    &.primary {
+        font-weight: 600;
+        background-color: var(--bg-button-primary);
+        color: var(--text-button-primary);
+    }
+
+    &.secondary {
+        background-color: var(--bg-button-secondary);
+        color: var(--text-button-secondary);
+    }
+}

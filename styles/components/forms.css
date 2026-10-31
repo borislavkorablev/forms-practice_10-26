@@ -2,26 +2,35 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid salmon;
     padding: 1rem;
     margin-inline: auto;
+    width: 22rem;
+    background-color: var(--bg-page-secondary);
+    border: 2px solid var(--border-page-default);
     border-radius: 0.5rem;
-    width: 300px;
 }
 
 .form_body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
 
-    & div {
-        display: flex;
-        flex-direction: column;
-    }
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .form_footer {
     display: flex;
     justify-content: flex-start;
     gap: 0.5rem;
+}
+
+.form_input,
+.form_textarea {
+    background-color: var(--bg-button-secondary);
+    border: 1px solid var(--border-button-default);
+    border-radius: 0.25rem;
 }

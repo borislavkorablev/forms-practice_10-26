@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -23,28 +23,29 @@
             </header>
 
             <div class="form_body">
-                <div for="bugtitle">
+                <div class="form_group" for="bugtitle">
                     <label for="bugtitle">
                         Bug Title
                     </label>
-                    <input type="text" id="bugtitle" name="bugtitle" required>
+                    <input class="form_input" type="text" id="bugtitle" name="bugtitle" required
+                        placeholder="Login button not working on mobile">
                 </div>
-                <div for="bugdescription">
+                <div class="form_group" for="bugdescription">
                     <label for="bugdescription">
                         Description
                     </label>
-                    <textarea type="text" id="bugdescription" name="bugdescription" aria-describedby="hint">
-                    </textarea
-                    id="hint">
-                    <p>Include steps to reproduce expected behavior and what actually happened.</p>
+                    <textarea class="form_textarea" id="bugdescription" name="bugdescription"
+                        placeholder="I'm having an issue with the login button on mobile."
+                        aria-describedby="hint"></textarea>
+                    <p id="hint">Include steps to reproduce expected behavior and what actually happened.</p>
                 </div>
             </div>
 
             <footer class="form_footer">
-                <button type="reset">
+                <button class="button secondary" type="reset">
                     Reset
                 </button>
-                <button type="submit">
+                <button class="button primary" type="submit">
                     Submit
                 </button>
             </footer>
