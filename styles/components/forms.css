@@ -19,3 +19,9 @@
         flex-direction: column;
     }
 }
+
+.form_footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}

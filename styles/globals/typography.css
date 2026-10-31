@@ -1,8 +1,13 @@
 h1 {
-    font-size: 14pt;
-    font-weight: 700;
+    font-size: 12pt;
+    font-weight: 500;
 }
 
 p {
-    font-size: 12pt;
+    font-size: 10pt;
+}
+
+label {
+    font-size: 10pt;
+    font-weight: 500;
 }
