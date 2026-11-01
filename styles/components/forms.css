@@ -1,36 +1,38 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+    gap: var(--space-m);
+    padding: var(--space-m);
     margin-inline: auto;
     width: 22rem;
     background-color: var(--bg-page-secondary);
     border: 2px solid var(--border-page-default);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-l);
 }
 
 .form_body {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-m);
 }
 
 .form_group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
 }
 
 .form_footer {
     display: flex;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: var(--space-xs);
 }
 
 .form_input,
 .form_textarea {
     background-color: var(--bg-button-secondary);
     border: 1px solid var(--border-button-default);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-s);
 }
+
+/* TODO: placeholder, typorgaphy, css for textarea and input, spacings to primitives*/

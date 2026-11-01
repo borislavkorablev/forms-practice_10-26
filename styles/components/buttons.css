@@ -1,7 +1,7 @@
 .button {
-    padding: 0.25rem 0.5rem;
+    padding: var(--space-xxs) var(--space-xs);
     border: 1px solid var(--border-button-default);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-m);
 
     &.primary {
         font-weight: 600;

@@ -1,3 +1,8 @@
+::selection {
+    background-color: var(--text-bg-color-selection);
+    color: var(--text-color-selection);
+}
+
 h1 {
     font-size: 10pt;
     font-weight: 500;
@@ -10,12 +15,12 @@ p {
 }
 
 label {
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: 500;
     color: var(--text-tertiary);
 }
 
 button {
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: 500;
 }

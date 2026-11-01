@@ -1,3 +1,12 @@
 :root {
-    --space-md: 1rem;
+    --space-xxs: .25rem;
+    --space-xs: .5rem;
+    --space-s: .75rem;
+    --space-m: 1rem;
+    --space-l: 1.25rem;
+    --space-xl: 1.5rem;
+
+    --border-radius-s: .25rem;
+    --border-radius-m: .5rem;
+    --border-radius-l: .75rem;
 }

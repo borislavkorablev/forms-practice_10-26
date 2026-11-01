@@ -27,4 +27,6 @@
     --text-tertiary: var(--white-dark);
     --text-button-primary: var(--dark-grey-default);
     --text-button-secondary: var(--white-default);
+    --text-bg-color-selection: var(--white-default);
+    --text-color-selection: var(--dark-grey-default);
 }
