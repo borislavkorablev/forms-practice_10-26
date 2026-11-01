@@ -1,7 +1,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: var(--space-m);
+    gap: var(--space-l);
     padding: var(--space-m);
     margin-inline: auto;
     width: 22rem;
@@ -25,14 +25,82 @@
 .form_footer {
     display: flex;
     justify-content: flex-start;
-    gap: var(--space-xs);
+    gap: var(--space-s);
 }
 
-.form_input,
+.form_input {
+    background-color: var(--bg-button-secondary);
+    color: var(--white-dark, #ffffff);
+    border: 1px solid var(--border-button-default);
+    border-radius: var(--border-radius-m);
+    padding: var(--space-xs);
+    transition: border-color 0.2s ease;
+    font-family: inherit;
+    font-size: var(--text-m);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--border-input-focus);
+        color: var(--white-dark, #ffffff);
+        font-family: inherit;
+        font-size: var(--text-m);
+
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+
+    &::placeholder {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out;
+    }
+}
+
 .form_textarea {
     background-color: var(--bg-button-secondary);
+    color: var(--white-dark, #ffffff);
+    width: 100%;
+    display: block;
     border: 1px solid var(--border-button-default);
-    border-radius: var(--border-radius-s);
+    border-radius: var(--border-radius-m);
+    padding: var(--space-xs) var(--space-xs) var(--space-xxxl) var(--space-xs);
+    height: 8rem;
+    resize: none;
+    transition: border-color 0.2s ease;
+    font-family: inherit;
+    font-size: var(--text-m);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--border-input-focus);
+        color: var(--white-dark, #ffffff);
+        font-family: inherit;
+        font-size: var(--text-m);
+
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+
+    &::placeholder {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out;
+    }
 }
 
-/* TODO: placeholder, typorgaphy, css for textarea and input, spacings to primitives*/
+.textarea_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.char_counter {
+    position: absolute;
+    left: var(--space-xs);
+    bottom: var(--space-xs);
+
+    color: var(--text-secondary);
+    font-size: var(--text-m);
+    font-family: inherit;
+
+    pointer-events: none;
+}

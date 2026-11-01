@@ -34,9 +34,12 @@
                     <label for="bugdescription">
                         Description
                     </label>
-                    <textarea class="form_textarea" id="bugdescription" name="bugdescription"
-                        placeholder="I'm having an issue with the login button on mobile."
-                        aria-describedby="hint"></textarea>
+                    <div class="textarea_wrapper">
+                        <textarea class="form_textarea" id="bugdescription" name="bugdescription" maxlength="100"
+                            required placeholder="I'm having an issue with the login button on mobile."
+                            aria-describedby="hint"></textarea>
+                        <div id="char_counter" class="char_counter">0/100 characters</div>
+                    </div>
                     <p id="hint">Include steps to reproduce expected behavior and what actually happened.</p>
                 </div>
             </div>
@@ -86,6 +89,23 @@
             
         </form>
     </main>
+
+<script>
+    const textarea = document.getElementById('bugdescription');
+    const counter = document.getElementById('char_counter');
+    const maxLength = textarea.maxLength;
+
+    textarea.addEventListener('input', () => {
+        const currentLength = textarea.value.length;
+        counter.textContent = `${currentLength}/${maxLength} characters`;
+    });
+
+    textarea.closest('form').addEventListener('reset', () => {
+        setTimeout(() => {
+            counter.textContent = `0/${maxLength} characters`;
+        }, 0);
+    });
+</script>
 </body>
 
 </html>

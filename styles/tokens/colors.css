@@ -1,5 +1,7 @@
 :root {
     /* --- Colors primitives --- */
+    --white: hsl(0, 0%, 100%);
+
     --black-default: hsl(0, 0%, 5%);
     --black-light: hsl(0, 0%, 10%);
 
@@ -16,9 +18,13 @@
     --bg-page-primary: var(--black-default);
     --bg-page-secondary: var(--black-light);
     --bg-button-primary: var(--white-default);
+    --bg-button-primary-hover: var(--white);
+    --bg-button-primary-active: var(--white-dark);
     --bg-button-secondary: var(--black-light);
+    --bg-button-secondary-hover: var(--black-default);
     --border-page-default: var(--dark-grey-default);
     --border-button-default: var(--light-grey-dark);
+    --border-input-focus: var(--white-dark);
 
 
     /* --- Semantic colors text --- */
