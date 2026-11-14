@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/borislavkorablev/forms-practice/issues"
   },
-  "homepage": "https://github.com/borislavkorablev/forms-practice#readme"
+  "homepage": "https://github.com/borislavkorablev/forms-practice#readme",
+  "devDependencies": {
+    "htmlhint": "1.9.2",
+    "prettier": "3.10.1",
+    "stylelint": "18.0.0",
+    "stylelint-config-standard": "41.0.0"
+  }
 }

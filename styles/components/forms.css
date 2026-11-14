@@ -1,106 +1,106 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-l);
-    padding: var(--space-m);
-    margin-inline: auto;
-    width: 22rem;
-    background-color: var(--bg-page-secondary);
-    border: 2px solid var(--border-page-default);
-    border-radius: var(--border-radius-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  padding: var(--space-m);
+  margin-inline: auto;
+  width: 22rem;
+  background-color: var(--bg-page-secondary);
+  border: 2px solid var(--border-page-default);
+  border-radius: var(--border-radius-l);
 }
 
 .form_body {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
 }
 
 .form_group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .form_footer {
-    display: flex;
-    justify-content: flex-start;
-    gap: var(--space-s);
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-s);
 }
 
 .form_input {
-    background-color: var(--bg-button-secondary);
+  background-color: var(--bg-button-secondary);
+  color: var(--white-dark, #ffffff);
+  border: 1px solid var(--border-button-default);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xs);
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  font-size: var(--text-m);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--border-input-focus);
     color: var(--white-dark, #ffffff);
-    border: 1px solid var(--border-button-default);
-    border-radius: var(--border-radius-m);
-    padding: var(--space-xs);
-    transition: border-color 0.2s ease;
     font-family: inherit;
     font-size: var(--text-m);
 
-    &:focus {
-        outline: none;
-        border: 1px solid var(--border-input-focus);
-        color: var(--white-dark, #ffffff);
-        font-family: inherit;
-        font-size: var(--text-m);
-
-        &::placeholder {
-            opacity: 0;
-        }
-    }
-
     &::placeholder {
-        opacity: 1;
-        transition: opacity 0.25s ease-in-out;
+      opacity: 0;
     }
+  }
+
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
 }
 
 .form_textarea {
-    background-color: var(--bg-button-secondary);
+  background-color: var(--bg-button-secondary);
+  color: var(--white-dark, #ffffff);
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border-button-default);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xs) var(--space-xs) var(--space-xxxl) var(--space-xs);
+  height: 8rem;
+  resize: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  font-size: var(--text-m);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--border-input-focus);
     color: var(--white-dark, #ffffff);
-    width: 100%;
-    display: block;
-    border: 1px solid var(--border-button-default);
-    border-radius: var(--border-radius-m);
-    padding: var(--space-xs) var(--space-xs) var(--space-xxxl) var(--space-xs);
-    height: 8rem;
-    resize: none;
-    transition: border-color 0.2s ease;
     font-family: inherit;
     font-size: var(--text-m);
 
-    &:focus {
-        outline: none;
-        border: 1px solid var(--border-input-focus);
-        color: var(--white-dark, #ffffff);
-        font-family: inherit;
-        font-size: var(--text-m);
-
-        &::placeholder {
-            opacity: 0;
-        }
-    }
-
     &::placeholder {
-        opacity: 1;
-        transition: opacity 0.25s ease-in-out;
+      opacity: 0;
     }
+  }
+
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
 }
 
 .textarea_wrapper {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .char_counter {
-    position: absolute;
-    left: var(--space-xs);
-    bottom: var(--space-xs);
+  position: absolute;
+  left: var(--space-xs);
+  bottom: var(--space-xs);
 
-    color: var(--text-secondary);
-    font-size: var(--text-m);
-    font-family: inherit;
+  color: var(--text-secondary);
+  font-size: var(--text-m);
+  font-family: inherit;
 
-    pointer-events: none;
+  pointer-events: none;
 }

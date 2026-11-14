@@ -1,17 +1,17 @@
 /* --- Primitives --- */
-@import url(styles/tokens/primitives.css);
-@import url(styles/tokens/colors.css);
+@import url("styles/tokens/primitives.css");
+@import url("styles/tokens/colors.css");
 
 /* --- Reset --- */
-@import url(styles/globals/reset.css);
+@import url("styles/globals/reset.css");
 
 /* --- Globals --- */
-@import url(styles/globals/globals.css);
-@import url(styles/globals/typography.css);
+@import url("styles/globals/globals.css");
+@import url("styles/globals/typography.css");
 
 /* --- Layout --- */
-@import url(styles/layouts/page-layout.css);
+@import url("styles/layouts/page-layout.css");
 
 /* --- Components --- */
-@import url(styles/components/forms.css);
-@import url(styles/components/buttons.css);
+@import url("styles/components/forms.css");
+@import url("styles/components/buttons.css");
