@@ -17,28 +17,28 @@
 <body>
     <main class="main">
         <form class="form">
-            <header class="form_header">
+            <header class="form-header">
                 <h1>Bug Report</h1>
                 <p>Help us improve by reporting bugs you encounter.</p>
             </header>
 
-            <div class="form_body">
-                <div class="form_group" for="bugtitle">
+            <div class="form-body">
+                <div class="form-group" for="bugtitle">
                     <label for="bugtitle">
                         Bug Title
                     </label>
-                    <input class="form_input" type="text" id="bugtitle" name="bugtitle" required
+                    <input class="form-input" type="text" id="bugtitle" name="bugtitle" required
                         placeholder="Login button not working on mobile">
                 </div>
-                <div class="form_group" for="bugdescription">
+                <div class="form-group" for="bugdescription">
                     <label for="bugdescription">
                         Description
                     </label>
-                    <div class="textarea_wrapper">
-                        <textarea class="form_textarea" id="bugdescription" name="bugdescription" maxlength="100"
+                    <div class="textarea-wrapper">
+                        <textarea class="form-textarea" id="bugdescription" name="bugdescription" maxlength="100"
                             required placeholder="I'm having an issue with the login button on mobile."
                             aria-describedby="hint"></textarea>
-                        <div id="char_counter" class="char_counter">0/100 characters</div>
+                        <div id="char-counter" class="char-counter">0/100 characters</div>
                     </div>
                     <p id="hint">Include steps to reproduce expected behavior and what actually happened.</p>
                 </div>
@@ -56,8 +56,8 @@
 
         <form class="form">
             <header class="form_header">
-                <h1>Bug Report</h1>
-                <p>Help us improve by reporting bugs you encounter.</p>
+                <h1>Subscription Plan</h1>
+                <p>Choose your subscription plan.</p>
             </header>
 
             <div class="form_body">
@@ -92,7 +92,7 @@
 
 <script>
     const textarea = document.getElementById('bugdescription');
-    const counter = document.getElementById('char_counter');
+    const counter = document.getElementById('char-counter');
     const maxLength = textarea.maxLength;
 
     textarea.addEventListener('input', () => {

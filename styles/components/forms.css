@@ -10,27 +10,27 @@
   border-radius: var(--border-radius-l);
 }
 
-.form_body {
+.form-body {
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
 }
 
-.form_group {
+.form-group {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
 }
 
-.form_footer {
+.form-footer {
   display: flex;
   justify-content: flex-start;
   gap: var(--space-s);
 }
 
-.form_input {
+.form-input {
   background-color: var(--bg-button-secondary);
-  color: var(--white-dark, #ffffff);
+  color: var(--white-dark, #fff);
   border: 1px solid var(--border-button-default);
   border-radius: var(--border-radius-m);
   padding: var(--space-xs);
@@ -38,10 +38,15 @@
   font-family: inherit;
   font-size: var(--text-m);
 
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
   &:focus {
     outline: none;
     border: 1px solid var(--border-input-focus);
-    color: var(--white-dark, #ffffff);
+    color: var(--white-dark, #fff);
     font-family: inherit;
     font-size: var(--text-m);
 
@@ -49,16 +54,11 @@
       opacity: 0;
     }
   }
-
-  &::placeholder {
-    opacity: 1;
-    transition: opacity 0.25s ease-in-out;
-  }
 }
 
-.form_textarea {
+.form-textarea {
   background-color: var(--bg-button-secondary);
-  color: var(--white-dark, #ffffff);
+  color: var(--white-dark, #fff);
   width: 100%;
   display: block;
   border: 1px solid var(--border-button-default);
@@ -70,10 +70,15 @@
   font-family: inherit;
   font-size: var(--text-m);
 
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
   &:focus {
     outline: none;
     border: 1px solid var(--border-input-focus);
-    color: var(--white-dark, #ffffff);
+    color: var(--white-dark, #fff);
     font-family: inherit;
     font-size: var(--text-m);
 
@@ -81,26 +86,19 @@
       opacity: 0;
     }
   }
-
-  &::placeholder {
-    opacity: 1;
-    transition: opacity 0.25s ease-in-out;
-  }
 }
 
-.textarea_wrapper {
+.textarea-wrapper {
   position: relative;
   width: 100%;
 }
 
-.char_counter {
+.char-counter {
   position: absolute;
   left: var(--space-xs);
   bottom: var(--space-xs);
-
   color: var(--text-secondary);
   font-size: var(--text-m);
   font-family: inherit;
-
   pointer-events: none;
 }

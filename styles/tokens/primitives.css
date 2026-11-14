@@ -1,5 +1,5 @@
 :root {
-  /* --- Spacings ---*/
+  /* --- Spacings --- */
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
   --space-s: 0.75rem;
@@ -9,12 +9,12 @@
   --space-xxl: 1.75rem;
   --space-xxxl: 2rem;
 
-  /* --- Border radius ---*/
+  /* --- Border radius --- */
   --border-radius-s: 0.25rem;
   --border-radius-m: 0.5rem;
   --border-radius-l: 0.75rem;
 
-  /* --- Typography ---*/
+  /* --- Typography --- */
   --text-s: 8pt;
   --text-m: 9pt;
   --text-l: 10pt;

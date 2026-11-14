@@ -1,18 +1,14 @@
 :root {
   /* --- Colors primitives --- */
-  --white: hsl(0, 0%, 100%);
-
-  --black-default: hsl(0, 0%, 5%);
-  --black-light: hsl(0, 0%, 10%);
-
-  --dark-grey-default: hsl(0, 0%, 15%);
-
-  --light-grey-dark: hsl(60, 1%, 21%);
-  --light-grey-default: hsl(30, 1%, 49%);
-
-  --white-dark: hsl(20, 5%, 89%);
-  --white-default: hsl(20, 5%, 89%);
-
+  --white: hsl(0deg 0% 100%);
+  --black-default: hsl(0deg 0% 5%);
+  --black-light: hsl(0deg 0% 10%);
+  --dark-grey-default: hsl(0deg 0% 15%);
+  --light-grey-dark: hsl(60deg 1% 21%);
+  --light-grey-default: hsl(30deg 1% 49%);
+  --white-dark: hsl(20deg 5% 89%);
+  --white-default: hsl(20deg 5% 89%);
+  
   /* --- Semantic colors layout --- */
   --bg-page-primary: var(--black-default);
   --bg-page-secondary: var(--black-light);
@@ -24,7 +20,7 @@
   --border-page-default: var(--dark-grey-default);
   --border-button-default: var(--light-grey-dark);
   --border-input-focus: var(--white-dark);
-
+  
   /* --- Semantic colors text --- */
   --text-primary: var(--white-default);
   --text-secondary: var(--light-grey-default);
