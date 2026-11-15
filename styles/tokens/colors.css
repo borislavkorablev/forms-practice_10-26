@@ -17,7 +17,8 @@
   --bg-button-primary-active: var(--white-dark);
   --bg-button-secondary: var(--black-light);
   --bg-button-secondary-hover: var(--black-default);
-  --border-page-default: var(--dark-grey-default);
+  --border-page-outer: var(--dark-grey-default);
+  --border-page-inner: var(--dark-grey-default);
   --border-button-default: var(--light-grey-dark);
   --border-input-focus: var(--white-dark);
   

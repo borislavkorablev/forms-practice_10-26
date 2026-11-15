@@ -17,7 +17,7 @@
 <body>
     <main class="main">
         <form class="form">
-            <header class="form-header">
+            <header>
                 <h1>Bug Report</h1>
                 <p>Help us improve by reporting bugs you encounter.</p>
             </header>
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <footer class="form_footer">
+            <footer class="form-footer footer-left">
                 <button class="button secondary" type="reset">
                     Reset
                 </button>
@@ -55,35 +55,40 @@
         </form>
 
         <form class="form">
-            <header class="form_header">
+            <header class="form-header">
                 <h1>Subscription Plan</h1>
                 <p>Choose your subscription plan.</p>
             </header>
 
-            <div class="form_body">
-                <div for="bugtitle">
-                    <label for="bugtitle">
-                        Bug Title
+            <div class="form-body">
+                <div class="addons">
+                    <label for="addons">
+                        Add-ons
                     </label>
-                    <input type="text" id="bugtitle" name="bugtitle" required>
-                </div>
-                <div for="bugdescription">
-                    <label for="bugdescription">
-                        Description
-                    </label>
-                    <textarea type="text" id="bugdescription" name="bugdescription" aria-describedby="hint">
-                    </textarea
-                    id="hint">
-                    <p>Include steps to reproduce expected behavior and what actually happened.</p>
+                    <p>Select additional features you'd like to include.</p>
+                    <fieldset class="form-checkbox">
+                        <label class="fieldset-item">
+                            <input type="checkbox" name="addons" value="analytics" />
+                            <span class="fieldset-label">Analytics</span>
+                            <span class="fieldset-description">Advanced analytics and reporting</span>
+                        </label>
+                        <label class="fieldset-item">
+                            <input type="checkbox" name="addons" value="backup" />
+                            <span class="fieldset-label">Backup</span>
+                            <span class="fieldset-description">Automated daily backups</span>
+                        </label>
+                        <label class="fieldset-item">
+                            <input type="checkbox" name="addons" value="priority-support" />
+                            <span class="fieldset-label">Priority Support</span>
+                            <span class="fieldset-description">24/7 premium customer supports</span>
+                        </label>
+                    </fieldset>
                 </div>
             </div>
 
-            <footer class="form_footer">
-                <button type="reset">
-                    Reset
-                </button>
-                <button type="submit">
-                    Submit
+            <footer class="form-footer footer-right">
+                <button class="button primary" type="submit">
+                    Save Preferences
                 </button>
             </footer>
             

@@ -19,7 +19,9 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+fieldset,
+input {
   margin: 0;
   padding: 0;
 }

@@ -14,4 +14,6 @@
 
 /* --- Components --- */
 @import url('styles/components/forms.css');
+@import url('styles/components/forms-text.css');
+@import url('styles/components/forms-textless.css');
 @import url('styles/components/buttons.css');

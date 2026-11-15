@@ -1,0 +1,74 @@
+.form-input {
+  background-color: var(--bg-button-secondary);
+  color: var(--white-dark, #fff);
+  border: 1px solid var(--border-button-default);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xs);
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  font-size: var(--text-m);
+
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  &:focus {
+    outline: none;
+    border: 1px solid var(--border-input-focus);
+    color: var(--white-dark, #fff);
+    font-family: inherit;
+    font-size: var(--text-m);
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.form-textarea {
+  background-color: var(--bg-button-secondary);
+  color: var(--white-dark, #fff);
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border-button-default);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xs) var(--space-xs) var(--space-xxxl) var(--space-xs);
+  height: 8rem;
+  resize: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  font-size: var(--text-m);
+
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  &:focus {
+    outline: none;
+    border: 1px solid var(--border-input-focus);
+    color: var(--white-dark, #fff);
+    font-family: inherit;
+    font-size: var(--text-m);
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.char-counter {
+  position: absolute;
+  left: var(--space-xs);
+  bottom: var(--space-xs);
+  color: var(--text-secondary);
+  font-size: var(--text-m);
+  font-family: inherit;
+  pointer-events: none;
+}
