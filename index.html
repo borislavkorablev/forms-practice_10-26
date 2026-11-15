@@ -82,6 +82,13 @@
                         </label>
                     </fieldset>
                 </div>
+                <div>
+                    <label class="notifications">
+                        <span class="notifications-label">Email Notifications</span>
+                        <input type="checkbox" name="email-notifications" role="switch" />
+                        <span class="notifications-description">Receive email updates about your subscription</span>
+                    </label>
+                </div>
             </div>
 
             <footer class="form-footer footer-right">
@@ -93,22 +100,7 @@
         </form>
     </main>
 
-<script>
-    const textarea = document.getElementById('bugdescription');
-    const counter = document.getElementById('char-counter');
-    const maxLength = textarea.maxLength;
-
-    textarea.addEventListener('input', () => {
-        const currentLength = textarea.value.length;
-        counter.textContent = `${currentLength}/${maxLength} characters`;
-    });
-
-    textarea.closest('form').addEventListener('reset', () => {
-        setTimeout(() => {
-            counter.textContent = `0/${maxLength} characters`;
-        }, 0);
-    });
-</script>
+<script src="scripts.js"></script>
 </body>
 
 </html>
