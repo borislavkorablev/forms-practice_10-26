@@ -13,7 +13,7 @@
 @import url('styles/layouts/page-layout.css');
 
 /* --- Components --- */
-@import url('styles/components/forms.css');
-@import url('styles/components/forms-text.css');
-@import url('styles/components/forms-textless.css');
+@import url('styles/components/forms/forms.css');
+@import url('styles/components/forms/form-first/form-first.css');
+@import url('styles/components/forms/form-second/form-second-addons.css');
 @import url('styles/components/buttons.css');

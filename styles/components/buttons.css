@@ -2,6 +2,7 @@
   padding: var(--space-xs) var(--space-s);
   border: 1px solid var(--border-button-default);
   border-radius: var(--border-radius-m);
+  cursor: pointer;
   transition:
     background-color 0.2s ease,
     transform 0.1s ease,
@@ -33,5 +34,10 @@
     &:active {
       transform: scale(0.99);
     }
+  }
+
+  &:focus-visible {
+      outline: 1px solid hsl(45deg 100% 50%);
+      outline-offset: 2px;
   }
 }

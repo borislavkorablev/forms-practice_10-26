@@ -4,10 +4,17 @@
   gap: var(--space-l);
   padding: var(--space-m);
   margin-inline: auto;
-  width: 22rem;
   background-color: var(--bg-page-secondary);
   border: 2px solid var(--border-page-outer);
   border-radius: var(--border-radius-l);
+
+  &.form-first {
+    width: 22rem;
+  }
+  
+  &.form-second {
+    width: 18rem;
+  }
 }
 
 .form-body {
@@ -16,7 +23,7 @@
   gap: var(--space-m);
 }
 
-.form-group {
+.form-first-group {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
