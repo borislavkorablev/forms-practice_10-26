@@ -61,6 +61,14 @@
             </header>
 
             <div class="form-body">
+                <label class="billing" for="billing">
+                    <span>Billing Period</span>
+                    <select class="form-select" name="billing" id="billing" required>
+                        <option value="monthly" selected>Monthly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                    <p>Choose how often you want to be billed.</p>
+                </label>
                 <div class="addons">
                     <h1 id="addons-label">Add-ons</h1>
                     <p>Select additional features you'd like to include.</p>
@@ -82,13 +90,11 @@
                         </label>
                     </fieldset>
                 </div>
-                <div>
-                    <label class="notifications">
-                        <span class="notifications-label">Email Notifications</span>
-                        <input type="checkbox" name="email-notifications" role="switch" />
-                        <span class="notifications-description">Receive email updates about your subscription</span>
-                    </label>
-                </div>
+                <label class="notifications">
+                    <span class="notifications-label">Email Notifications</span>
+                    <input type="checkbox" name="email-notifications" role="switch" />
+                    <span class="notifications-description">Receive email updates about your subscription</span>
+                </label>
             </div>
 
             <footer class="form-footer footer-right">

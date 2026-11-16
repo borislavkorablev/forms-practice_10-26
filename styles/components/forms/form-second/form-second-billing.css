@@ -1,0 +1,40 @@
+.billing {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-select {
+  appearance: none; /* Убирает системную стрелку и оформление ОС */
+  background-color: var(--bg-input-default);
+  color: var(--white-dark, #fff);
+  border: 1px solid var(--border-input-default);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xs);
+  padding-inline-end: 2.5rem; /* Место справа, чтобы длинный текст не залезал на стрелку */
+  font-family: inherit;
+  font-size: var(--text-m);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease-in-out;
+
+
+  background-image: url("../../../../images/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+
+  &:hover {
+    border-color: var(--border-input-focus);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: var(--bg-page-secondary);
+    border-color: var(--border-input-focus);
+  }
+
+  body.using-keyboard &:focus {
+    outline: 2px solid hsl(45deg 100% 50%);
+    outline-offset: 2px;
+  }
+}
