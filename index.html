@@ -1,121 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Practice</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forms Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <main class="main">
+      <form class="form form-first">
+        <header>
+          <h1>Bug Report</h1>
+          <p>Help us improve by reporting bugs you encounter.</p>
+        </header>
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <main class="main">
-    <form class="form form-first">
-      <header>
-        <h1>Bug Report</h1>
-        <p>Help us improve by reporting bugs you encounter.</p>
-      </header>
-
-      <div class="form-body">
-        <div class="form-first-group" for="bugtitle">
-          <label for="bugtitle">
-            Bug Title
-          </label>
-          <input class="form-input" type="text" id="bugtitle" name="bugtitle" required placeholder="Login button not working on mobile">
-        </div>
-        <div class="form-first-group" for="bugdescription">
-          <label for="bugdescription">
-            Description
-          </label>
-          <div class="textarea-wrapper">
-            <textarea class="form-textarea" id="bugdescription" name="bugdescription" maxlength="100" required placeholder="I'm having an issue with the login button on mobile." aria-describedby="hint"></textarea>
-            <div id="char-counter" class="char-counter">0/100 characters</div>
+        <div class="form-body">
+          <div class="form-first-group" for="bugtitle">
+            <label for="bugtitle"> Bug Title </label>
+            <input
+              class="form-input"
+              type="text"
+              id="bugtitle"
+              name="bugtitle"
+              required
+              placeholder="Login button not working on mobile"
+            />
           </div>
-          <p id="hint">Include steps to reproduce expected behavior and what actually happened.</p>
+          <div class="form-first-group" for="bugdescription">
+            <label for="bugdescription"> Description </label>
+            <div class="textarea-wrapper">
+              <textarea
+                class="form-textarea"
+                id="bugdescription"
+                name="bugdescription"
+                maxlength="100"
+                required
+                placeholder="I'm having an issue with the login button on mobile."
+                aria-describedby="hint"
+              ></textarea>
+              <div id="char-counter" class="char-counter">0/100 characters</div>
+            </div>
+            <p id="hint">
+              Include steps to reproduce expected behavior and what actually
+              happened.
+            </p>
+          </div>
         </div>
-      </div>
 
         <footer class="form-footer footer-left">
-          <button class="button secondary" type="reset">
-            Reset
-          </button>
-          <button class="button primary" type="submit">
-            Submit
-          </button>
+          <button class="button secondary" type="reset">Reset</button>
+          <button class="button primary" type="submit">Submit</button>
         </footer>
-    </form>
+      </form>
 
-      
-    <form class="form form-second">
-      <header class="form-header">
-        <h1>Subscription Plan</h1>
-        <p>Choose your subscription plan.</p>
-      </header>
+      <form class="form form-second">
+        <header class="form-header">
+          <h1>Subscription Plan</h1>
+          <p>Choose your subscription plan.</p>
+        </header>
 
-      <div class="form-body">
-        <fieldset class="plan-selection">
-          <label class="plan-item">
-            <span>Basic</span>
-            <input class="plan-title" type="radio" name="plan" value="basic" checked />
-            <p class="plan-description">For individuals and small teams</p>
-          </label>
-          <label class="plan-item">
-            <span>Pro</span>
-            <input type="radio" name="plan" value="pro" />
-            <p class="plan-description">For businesses with higher demands</p>
-          </label>
-        </fieldset>
-        <label class="billing" for="billing">
-          <span>Billing Period</span>
-          <select class="form-select" name="billing" id="billing" required>
-            <option value="monthly" selected>Monthly</option>
-            <option value="annually">Annually</option>
-          </select>
-          <p>Choose how often you want to be billed.</p>
-        </label>
-        <div class="addons">
-          <h1 id="addons-label">Add-ons</h1>
-          <p>Select additional features you'd like to include.</p>
-          <fieldset class="form-fieldset" aria-labelledby="addons-label">
-            <label class="fieldset-item">
-              <input type="checkbox" name="addons" value="analytics" />
-              <span>Analytics</span>
-              <p class="fieldset-description">Advanced analytics and reporting</p>
+        <div class="form-body">
+          <fieldset class="plan-selection">
+            <label class="plan-item">
+              <span>Basic</span>
+              <input
+                class="plan-title"
+                type="radio"
+                name="plan"
+                value="basic"
+                checked
+              />
+              <p class="plan-description">For individuals and small teams</p>
             </label>
-            <label class="fieldset-item">
-              <input type="checkbox" name="addons" value="backup" />
-              <span>Backup</span>
-              <p class="fieldset-description">Automated daily backups</p>
-            </label>
-            <label class="fieldset-item">
-              <input type="checkbox" name="addons" value="priority-support" />
-              <span>Priority Support</span>
-              <p class="fieldset-description">24/7 premium customer supports</span>
+            <label class="plan-item">
+              <span>Pro</span>
+              <input type="radio" name="plan" value="pro" />
+              <p class="plan-description">For businesses with higher demands</p>
             </label>
           </fieldset>
-        </div>
+          <label class="billing" for="billing">
+            <span>Billing Period</span>
+            <select class="form-select" name="billing" id="billing" required>
+              <option value="monthly" selected>Monthly</option>
+              <option value="annually">Annually</option>
+            </select>
+            <p>Choose how often you want to be billed.</p>
+          </label>
+          <div class="addons">
+            <h1 id="addons-label">Add-ons</h1>
+            <p>Select additional features you'd like to include.</p>
+            <fieldset class="form-fieldset" aria-labelledby="addons-label">
+              <label class="fieldset-item">
+                <input type="checkbox" name="addons" value="analytics" />
+                <span>Analytics</span>
+                <p class="fieldset-description">
+                  Advanced analytics and reporting
+                </p>
+              </label>
+              <label class="fieldset-item">
+                <input type="checkbox" name="addons" value="backup" />
+                <span>Backup</span>
+                <p class="fieldset-description">Automated daily backups</p>
+              </label>
+              <label class="fieldset-item">
+                <input type="checkbox" name="addons" value="priority-support" />
+                <span>Priority Support</span>
+                <p class="fieldset-description">
+                  24/7 premium customer supports
+                </p>
+              </label>
+            </fieldset>
+          </div>
           <label class="notifications">
             <span>Email Notifications</span>
             <input type="checkbox" name="email-notifications" role="switch" />
             <p>Receive email updates about your subscription</p>
           </label>
-      </div>
+        </div>
 
-      <footer class="form-footer footer-right">
-        <button class="button primary" type="submit">
-          Save Preferences
-        </button>
-      </footer>
-    </form>
-  </main>
+        <footer class="form-footer footer-right">
+          <button class="button primary" type="submit">Save Preferences</button>
+        </footer>
+      </form>
+    </main>
 
-<script src="scripts.js"></script>
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>

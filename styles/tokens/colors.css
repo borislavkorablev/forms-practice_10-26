@@ -9,7 +9,7 @@
   --light-grey-dark: hsl(60deg 1% 21%);
   --light-grey-default: hsl(0deg 0% 50%);
   --yellow-default: hsl(45deg 100% 50%);
-  
+
   /* --- Semantic colors layout --- */
   --bg-page-primary: var(--black-default);
   --bg-page-secondary: var(--black-light);
@@ -28,7 +28,7 @@
   --border-input-default: var(--light-grey-dark);
   --border-input-focus: var(--light-grey-default);
   --outline-input-keyboard: var(--yellow-default);
-  
+
   /* --- Semantic colors text --- */
   --text-primary: var(--white-default);
   --text-secondary: var(--light-grey-default);

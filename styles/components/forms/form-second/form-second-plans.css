@@ -18,18 +18,20 @@
   border: 1px solid var(--border-input-default);
   border-radius: var(--border-radius-m);
   cursor: pointer;
-  transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
+  transition:
+    background-color var(--transition-base) var(--ease-default),
+    border-color var(--transition-base) var(--ease-default);
 
   &:hover {
     border-color: var(--border-input-focus);
   }
 
-  &:has(input[type="radio"]:checked) {
+  &:has(input[type='radio']:checked) {
     background-color: var(--bg-page-secondary);
     border-color: var(--border-input-default);
   }
 
-  body.using-keyboard &:has(input[type="radio"]:focus) {
+  body.using-keyboard &:has(input[type='radio']:focus) {
     outline: 2px solid var(--outline-input-keyboard);
     outline-offset: 2px;
   }
@@ -38,7 +40,7 @@
     grid-column: 1;
   }
 
-  & input[type="radio"] {
+  & input[type='radio'] {
     appearance: none;
     margin: 0;
     width: var(--size-s);
@@ -55,9 +57,10 @@
     &:checked {
       border-color: var(--light-grey-default);
       background: radial-gradient(
-      circle,
-      var(--bg-checkbox-checked) 34%,
-      var(--bg-page-secondary) 38%);
+        circle,
+        var(--bg-checkbox-checked) 34%,
+        var(--bg-page-secondary) 38%
+      );
     }
   }
 }

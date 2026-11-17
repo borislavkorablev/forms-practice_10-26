@@ -1,67 +1,69 @@
-.addons { 
-    padding-block: var(--space-m);
-    border-block: 2px solid var(--border-page-inner);
+.addons {
+  padding-block: var(--space-m);
+  border-block: 2px solid var(--border-page-inner);
 }
 
 .form-fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    padding-block-start: var(--space-s);
-    border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-block-start: var(--space-s);
+  border: none;
 }
 
 .fieldset-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xxxs) var(--space-s);
+  align-items: center;
+
+  & input[type='checkbox'] {
+    appearance: none;
+    margin: 0;
+    width: var(--size-ms);
+    height: var(--size-ms);
+    border: 1px solid var(--border-input-default);
+    border-radius: var(--border-radius-s);
+    background-color: var(--bg-input-default);
+    cursor: pointer;
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-xxxs) var(--space-s);
-    align-items: center;
+    place-content: center;
+    transition:
+      background-color var(--transition-base) var(--ease-default),
+      border-color var(--transition-base) var(--ease-default);
 
-    & input[type="checkbox"] {
-        appearance: none;
-        margin: 0;
-        width: var(--size-ms);
-        height: var(--size-ms);
-        border: 1px solid var(--border-input-default);
-        border-radius: var(--border-radius-s);
-        background-color: var(--bg-input-default);
-        cursor: pointer;
-        display: grid;
-        place-content: center;
-        transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
-
-        &:hover {
-            border-color: var(--border-input-focus);
-        }
-
-        &:checked {
-            background-color: var(--bg-page-secondary);
-            border-color: var(--border-input-default);
-
-            &:hover {
-                border-color: var(--border-input-focus);
-            }
-
-            &::before {
-                content: "";
-                width: var(--size-xs);
-                height: var(--size-xs);
-                background-color: var(--bg-checkbox-checked);
-                mask-image: url("../../../../images/svg/check.svg");
-                mask-repeat: no-repeat;
-                mask-position: center;
-                mask-size: contain;
-            }
-        }
-
-        &:focus-visible {
-            outline: 2px solid var(--outline-input-keyboard);
-            outline-offset: 2px;
-            background-color: var(--bg-page-secondary);
-        }
+    &:hover {
+      border-color: var(--border-input-focus);
     }
-    
-    & .fieldset-description {
-        grid-column: 2;
+
+    &:checked {
+      background-color: var(--bg-page-secondary);
+      border-color: var(--border-input-default);
+
+      &:hover {
+        border-color: var(--border-input-focus);
+      }
+
+      &::before {
+        content: '';
+        width: var(--size-xs);
+        height: var(--size-xs);
+        background-color: var(--bg-checkbox-checked);
+        mask-image: url('../../../../images/svg/check.svg');
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+      }
     }
+
+    &:focus-visible {
+      outline: 2px solid var(--outline-input-keyboard);
+      outline-offset: 2px;
+      background-color: var(--bg-page-secondary);
+    }
+  }
+
+  & .fieldset-description {
+    grid-column: 2;
+  }
 }

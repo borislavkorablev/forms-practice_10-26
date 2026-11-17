@@ -4,7 +4,7 @@
   gap: var(--space-xxxs) var(--space-s);
   align-items: center;
 
-  & input[role="switch"] {
+  & input[role='switch'] {
     appearance: none;
     margin: 0;
     width: var(--size-xxl);
@@ -15,10 +15,12 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
+    transition:
+      background-color var(--transition-base) var(--ease-default),
+      border-color var(--transition-base) var(--ease-default);
 
     &::before {
-      content: "";
+      content: '';
       width: var(--size-ms);
       height: var(--size-ms);
       border-radius: 50%;
@@ -49,4 +51,3 @@
     }
   }
 }
-
