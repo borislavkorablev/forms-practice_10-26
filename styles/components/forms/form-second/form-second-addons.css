@@ -44,7 +44,10 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 background-color: var(--bg-checkbox-checked);
-                clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                mask-image: url("../../../../images/svg/check.svg");
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
             }
         }
 

@@ -7,13 +7,14 @@
 .form-select {
   appearance: none; /* Убирает системную стрелку и оформление ОС */
   background-color: var(--bg-input-default);
-  color: var(--white-dark, #fff);
+  color: var(--text-primary);
   border: 1px solid var(--border-input-default);
   border-radius: var(--border-radius-m);
   padding: var(--space-xs);
   padding-inline-end: 2.5rem; /* Место справа, чтобы длинный текст не залезал на стрелку */
   font-family: inherit;
-  font-size: var(--text-m);
+  font-size: var(--text-s);
+  font-weight: var(--text-weight-normal);
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease-in-out;
 

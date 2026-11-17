@@ -54,6 +54,7 @@
             </footer>
         </form>
 
+        
         <form class="form form-second">
             <header class="form-header">
                 <h1>Subscription Plan</h1>
@@ -61,6 +62,18 @@
             </header>
 
             <div class="form-body">
+                <fieldset class="plan-selection">
+                    <label class="plan-item">
+                        <span>Basic</span>
+                        <input class="plan-title" type="radio" name="plan" value="basic" checked />
+                        <span class="plan-description">For individuals and small teams</span>
+                    </label>
+                    <label class="plan-item">
+                        <span class="plan-title">Pro</span>
+                        <input type="radio" name="plan" value="pro" />
+                        <span class="plan-description">For businesses with higher demands</span>
+                    </label>
+                </fieldset>
                 <label class="billing" for="billing">
                     <span>Billing Period</span>
                     <select class="form-select" name="billing" id="billing" required>
@@ -91,7 +104,7 @@
                     </fieldset>
                 </div>
                 <label class="notifications">
-                    <span class="notifications-label">Email Notifications</span>
+                    <span>Email Notifications</span>
                     <input type="checkbox" name="email-notifications" role="switch" />
                     <span class="notifications-description">Receive email updates about your subscription</span>
                 </label>

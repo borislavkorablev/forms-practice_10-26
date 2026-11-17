@@ -1,0 +1,78 @@
+.plan-selection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding-inline: 0;
+    padding-block-end: var(--space-m);
+    border: none;
+    border-block-end: 2px solid var(--border-page-inner);
+}
+
+.plan-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 0.75rem;
+    row-gap: 0.25rem;
+    align-items: center;
+    padding: var(--space-s);
+    background-color: var(--bg-input-default);
+    border: 1px solid var(--border-input-default);
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+
+    /* Подсветка рамки карточки при наведении */
+    &:hover {
+        border-color: var(--border-input-focus);
+    }
+
+    /* Выделенная рамка и фон карточки, когда радио внутри выбрано */
+    &:has(input[type="radio"]:checked) {
+        background-color: var(--bg-page-secondary);
+        border-color: var(--border-input-default);
+    }
+
+    /* Жёлтая обводка всей карточки при переходе с клавиатуры (Tab) */
+    body.using-keyboard &:has(input[type="radio"]:focus) {
+        outline: 2px solid hsl(45deg 100% 50%);
+        outline-offset: 2px;
+    }
+
+    & .plan-title {
+        font-size: var(--text-m);
+        font-weight: var(--text-weight-semibold);
+    }
+
+    & .plan-description {
+        grid-column: 1;
+        font-size: var(--text-s);
+        font-weight: var(--text-weight-normal);
+        color: var(--text-secondary);
+    }
+
+    /* Кастомный кружок radio */
+    & input[type="radio"] {
+        appearance: none;
+        box-sizing: border-box;
+        margin: 0;
+        width: 0.75rem;
+        height: 0.75rem;
+        border: 1px solid var(--border-input-default);
+        border-radius: 50%;
+        background-color: var(--bg-input-default);
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:checked {
+        border-color: var(--light-grey-default);
+        background: radial-gradient(
+            circle,
+            var(--white-dark, hsl(0deg 0% 95%)) 34%,
+            var(--bg-page-secondary) 38%
+        );
+    }
+    }
+}
