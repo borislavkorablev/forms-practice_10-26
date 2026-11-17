@@ -8,6 +8,7 @@
   --light-grey-default: hsl(0deg 0% 50%);
   --white-dark: hsl(20deg 5% 89%);
   --white-default: hsl(20deg 5% 89%);
+  --yellow-default: hsl(45deg 100% 50%);
   
   /* --- Semantic colors layout --- */
   --bg-page-primary: var(--black-default);
@@ -20,11 +21,13 @@
   --bg-button-primary-active: var(--white-dark);
   --bg-button-secondary: var(--black-light);
   --bg-button-secondary-hover: var(--black-default);
+  --bg-switch-toggle: var(--white-default);
   --border-page-outer: var(--dark-grey-default);
   --border-page-inner: var(--dark-grey-default);
   --border-button-default: var(--light-grey-dark);
   --border-input-default: var(--light-grey-dark);
   --border-input-focus: var(--light-grey-default);
+  --outline-input-keyboard: var(--yellow-default);
   
   /* --- Semantic colors text --- */
   --text-primary: var(--white-default);

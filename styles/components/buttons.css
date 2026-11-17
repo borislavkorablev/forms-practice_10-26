@@ -37,7 +37,7 @@
   }
 
   &:focus-visible {
-      outline: 1px solid hsl(45deg 100% 50%);
+      outline: 2px solid var(--outline-input-keyboard);
       outline-offset: 2px;
   }
 }

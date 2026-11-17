@@ -1,28 +1,28 @@
 .billing {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .form-select {
-  appearance: none; /* Убирает системную стрелку и оформление ОС */
+  appearance: none;
   background-color: var(--bg-input-default);
   color: var(--text-primary);
   border: 1px solid var(--border-input-default);
   border-radius: var(--border-radius-m);
   padding: var(--space-xs);
-  padding-inline-end: 2.5rem; /* Место справа, чтобы длинный текст не залезал на стрелку */
+  padding-inline-end: var(--space-xxxxl);
   font-family: inherit;
-  font-size: var(--text-s);
+  font-size: var(--text-m);
   font-weight: var(--text-weight-normal);
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease-in-out;
+  transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
 
 
   background-image: url("../../../../images/svg/arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
+  background-position: right var(--space-s) center;
+  background-size: var(--size-m);
 
   &:hover {
     border-color: var(--border-input-focus);
@@ -35,7 +35,7 @@
   }
 
   body.using-keyboard &:focus {
-    outline: 2px solid hsl(45deg 100% 50%);
+    outline: 2px solid var(--outline-input-keyboard);
     outline-offset: 2px;
   }
 }

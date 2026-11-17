@@ -1,5 +1,6 @@
 :root {
   /* --- Spacings --- */
+  --space-xxxs: 0.125rem;
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
   --space-s: 0.75rem;
@@ -8,11 +9,29 @@
   --space-xl: 1.5rem;
   --space-xxl: 1.75rem;
   --space-xxxl: 2rem;
+  --space-xxxxl: 2.5rem;
+
+  /* --- Sizes --- */
+  --size-xxs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-s: 0.75rem;
+  --size-ms: 0.875rem;
+  --size-m: 1rem;
+  --size-l: 1.25rem;
+  --size-xl: 1.5rem;
+  --size-xxl: 1.75rem;
+  --size-xxxl: 2rem;
 
   /* --- Border radius --- */
   --border-radius-s: 0.25rem;
   --border-radius-m: 0.5rem;
   --border-radius-l: 0.75rem;
+  --border-radius-full: 62.5rem;
+
+  /* --- Animation --- */
+  --transition-base: 0.2s;
+  --ease-default: ease;
+  --ease-in-out: ease-in-out;
 
   /* --- Typography --- */
   --text-s: 8pt;
