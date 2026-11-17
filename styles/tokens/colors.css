@@ -1,13 +1,13 @@
 :root {
   /* --- Colors primitives --- */
   --white: hsl(0deg 0% 100%);
+  --white-dark: hsl(20deg 5% 89%);
+  --white-default: hsl(20deg 5% 89%);
   --black-default: hsl(0deg 0% 5%);
   --black-light: hsl(0deg 0% 10%);
   --dark-grey-default: hsl(0deg 0% 15%);
   --light-grey-dark: hsl(60deg 1% 21%);
   --light-grey-default: hsl(0deg 0% 50%);
-  --white-dark: hsl(20deg 5% 89%);
-  --white-default: hsl(20deg 5% 89%);
   --yellow-default: hsl(45deg 100% 50%);
   
   /* --- Semantic colors layout --- */

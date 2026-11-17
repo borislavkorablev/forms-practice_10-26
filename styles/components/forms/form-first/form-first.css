@@ -4,7 +4,7 @@
   border: 1px solid var(--border-input-default);
   border-radius: var(--border-radius-m);
   padding: var(--space-xs);
-  transition: background-color 0.15s ease, border-color 0.15s ease-in-out;
+  transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
   font-family: inherit;
   font-size: var(--text-m);
 
@@ -14,14 +14,14 @@
   
   &::placeholder {
     opacity: 1;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity var(--transition-long) var(--ease-in-out);
   }
   
   &:focus {
     outline: none;
     background-color: var(--bg-page-secondary);
     border: 1px solid var(--border-input-focus);
-    color: var(--white-dark, #fff);
+    color: var(--text-tertiary);
     font-family: inherit;
     font-size: var(--text-m);
 
@@ -30,13 +30,13 @@
     }
   }
 
-  body.using-keyboard &:focus {
-    outline: 2px solid hsl(45deg 100% 50%);
-    outline-offset: 2px;
-  }
-
-  &:not(:placeholder-shown):not(:focus) {
+  &:not(:placeholder-shown, :focus) {
     background-color: var(--bg-page-secondary);
+  }
+  
+  body.using-keyboard &:focus {
+    outline: 2px solid var(--outline-input-keyboard);
+    outline-offset: 2px;
   }
 }
 
@@ -50,7 +50,7 @@
   padding: var(--space-xs) var(--space-xs) var(--space-xxxl) var(--space-xs);
   height: 8rem;
   resize: none;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
   font-family: inherit;
   font-size: var(--text-m);
 
@@ -60,14 +60,14 @@
 
   &::placeholder {
     opacity: 1;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity var(--transition-long) var(--ease-in-out);
   }
   
   &:focus {
     outline: none;
     background-color: var(--bg-page-secondary);
     border: 1px solid var(--border-input-focus);
-    color: var(--white-dark, #fff);
+    color: var(--text-tertiary);
     font-family: inherit;
     font-size: var(--text-m);
 
@@ -76,13 +76,13 @@
     }
   }
 
-  body.using-keyboard &:focus {
-    outline: 2px solid hsl(45deg 100% 50%);
-    outline-offset: 2px;
+  &:not(:placeholder-shown, :focus) {
+    background-color: var(--bg-page-secondary);
   }
   
-  &:not(:placeholder-shown):not(:focus) {
-    background-color: var(--bg-page-secondary);
+  body.using-keyboard &:focus {
+    outline: 2px solid var(--outline-input-keyboard);
+    outline-offset: 2px;
   }
 }
 

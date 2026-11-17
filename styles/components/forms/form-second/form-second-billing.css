@@ -17,8 +17,6 @@
   font-weight: var(--text-weight-normal);
   cursor: pointer;
   transition: background-color var(--transition-base) var(--ease-default), border-color var(--transition-base) var(--ease-default);
-
-
   background-image: url("../../../../images/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: right var(--space-s) center;

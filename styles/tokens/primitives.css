@@ -30,6 +30,7 @@
 
   /* --- Animation --- */
   --transition-base: 0.2s;
+  --transition-long: 0.25s;
   --ease-default: ease;
   --ease-in-out: ease-in-out;
 

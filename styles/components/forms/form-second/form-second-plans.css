@@ -11,8 +11,7 @@
 .plan-item {
   display: grid;
   grid-template-columns: 1fr auto;
-  column-gap: var(--space-s);
-  row-gap: var(--space-xxxs);
+  gap: var(--space-xxxs) var(--space-s);
   align-items: center;
   padding: var(--space-s);
   background-color: var(--bg-input-default);
